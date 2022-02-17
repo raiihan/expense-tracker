@@ -26,14 +26,17 @@
                 <div class="col-md-8 col-sm-12">
                     <img class="img-fluid mb-3" src="./images/save.jpg" alt="">
                 </div>
+
                 <!-- Calculate Section Start -->
                 <div class="col-md-4 col-sm-12 px-5 calculate-section">
+
                     <!-- Income part -->
                     <p class="fs-4 text-center mt-3">Income</p>
                     <div class="input-group mb-3">
                         <label for="income" class="w-25">Income:</label>
                         <input type="text" class="form-control input-field" id="income">
                     </div>
+
                     <!-- Expense Part -->
                     <p class="fs-4 text-center">Expenses</p>
                     <div class="input-group mb-3">
@@ -48,25 +51,30 @@
                         <label for="clothes" class="w-25">Clothes:</label>
                         <input type="text" class="form-control input-field" id="clothes">
                     </div>
+
                     <!-- Error Warning -->
                     <p id="error-msg" class="text-danger fw-bolder text-center d-none">Please Input a valid
                         Numbers</p>
                     <p id="error-for-expenses" class="text-danger fw-bolder text-center d-none">You don't have enough
                         Money for Expenses</p>
+
                     <!-- Calculate Button -->
                     <div class="d-grid col-4 mx-auto">
                         <button id="calculate-btn" class="btn btn-primary" type="button">Calculate</button>
                     </div>
+
                     <!-- Total Expense and amount -->
-                    <p class="fs-5 text-center">Total Expenses: <span id="total-expenses">5500</span></p>
-                    <p class="fs-5 text-center">Balance: <span id="balance">4500</span></p>
+                    <p class="fs-5 text-center">Total Expenses: <span id="total-expenses">0</span></p>
+                    <p class="fs-5 text-center">Balance: <span id="balance">0</span></p>
+
                     <!-- Saving section -->
                     <div class="input-group mb-3">
                         <label for="clothes" class="me-3">Save:</label>
                         <input type="text" class="form-control input-field" id="percentage">
                         <span class="input-group-text ms-2">%</span>
-                        <button id="saving-amount" class="btn btn-primary ms-2 px-5">Save</button>
+                        <button id="saving-amount" class="btn btn-primary ms-2 px-4">Save</button>
                     </div>
+
                     <!-- Error handle  start-->
                     <p id="input-number" class="text-danger fw-bolder text-center d-none">Please Input a valid Numbers
                     </p>
@@ -76,9 +84,10 @@
                     <p id="input-enough-money" class="text-danger fw-bolder text-center d-none">You don't have enough
                         Money</p>
                     <!-- Error handle end-->
+
                     <!-- Saving amount and remaining Balance -->
-                    <p class="fs-5 text-center">Saving Amount: <span id="Savaing-balance">2000</span></p>
-                    <p class="fs-5 text-center">Remaining Balance: <span id="remainder-balance">2500</span></p>
+                    <p class="fs-5 text-center">Saving Amount: <span id="Savaing-balance">0</span></p>
+                    <p class="fs-5 text-center">Remaining Balance: <span id="remainder-balance">0</span></p>
                 </div>
             </div>
         </section>
