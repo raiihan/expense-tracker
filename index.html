@@ -48,6 +48,8 @@
                         <label for="clothes" class="w-25">Clothes:</label>
                         <input type="text" class="form-control input-field" id="clothes">
                     </div>
+                    <!-- Error Warning -->
+                    <p id="error-msg" class="text-danger fw-bolder text-center d-none">Please Input a valid Numbers</p>
                     <!-- Calculate Button -->
                     <div class="d-grid col-4 mx-auto">
                         <button id="calculate-btn" class="btn btn-primary" type="button">Calculate</button>
@@ -58,13 +60,22 @@
                     <!-- Saving section -->
                     <div class="input-group mb-3">
                         <label for="clothes" class="me-3">Save:</label>
-                        <input type="text" class="form-control input-field" id="clothes">
+                        <input type="text" class="form-control input-field" id="percentage">
                         <span class="input-group-text ms-2">%</span>
-                        <button class="btn btn-primary ms-2">Save</button>
+                        <button id="saving-amount" class="btn btn-primary ms-2 px-5">Save</button>
                     </div>
+                    <!-- Error handle  start-->
+                    <p id="input-number" class="text-danger fw-bolder text-center d-none">Please Input a valid Numbers
+                    </p>
+                    <p id="input-greater-number" class="text-danger fw-bolder text-center d-none">Please Input a Number
+                        Greater
+                        than 0.</p>
+                    <p id="input-enough-money" class="text-danger fw-bolder text-center d-none">You don't have enough
+                        Money</p>
+                    <!-- Error handle end-->
                     <!-- Saving amount and remaining Balance -->
-                    <p class="fs-5 text-center">Saving Amount: <span>2000</span></p>
-                    <p class="fs-5 text-center">Remaining Balance: <span>2500</span></p>
+                    <p class="fs-5 text-center">Saving Amount: <span id="Savaing-balance">2000</span></p>
+                    <p class="fs-5 text-center">Remaining Balance: <span id="remainder-balance">2500</span></p>
                 </div>
             </div>
         </section>
