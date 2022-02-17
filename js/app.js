@@ -18,24 +18,35 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const rentAmount = getInputValue('rent');
     const clothesAmount = getInputValue('clothes');
     if (incomeAmount > 0 && foodAmount > 0 && rentAmount > 0 && clothesAmount > 0) {
+
         console.log('Food : ', foodAmount, "rent : ", rentAmount, 'clothes : ', clothesAmount)
         // total Expense
         const totalExpenses = foodAmount + rentAmount + clothesAmount;
         console.log(totalExpenses);
-        // calculate Balance
-        const balance = incomeAmount - totalExpenses;
-        console.log(balance);
-        // update UI
-        document.getElementById('total-expenses').innerText = totalExpenses;
-        document.getElementById('balance').innerText = balance;
+        if (incomeAmount > totalExpenses) {
+            // calculate Balance
+            const balance = incomeAmount - totalExpenses;
+            console.log(balance);
+            // update UI
+            document.getElementById('total-expenses').innerText = totalExpenses;
+            document.getElementById('balance').innerText = balance;
+        } else {
+            console.log('you dont hava money')
+            document.getElementById('error-for-expenses').style = 'display: block !important';
+        }
+
 
         const error = document.getElementById('error-msg');
         error.style = 'display: none !important';
+
+
     }
     else {
         const error = document.getElementById('error-msg');
         error.style = 'display: block !important';
         console.log(error)
+
+
     }
 })
 
